@@ -1,0 +1,47 @@
+body {/*body section.*/
+  background-color: #000000; /*A black background makes all text on the website easier to read.*/
+  color: #EFEFEF;/*White text on a black background is easiest to read.*/
+  font-family: Arial, Microsoft Sans-Serif;/*These two fonts are easy to read.*/
+  font-size: 25px;/*This text size is appropriate for the text to be readable by everyone bu not so the text is too cluttered.*/
+}
+.banner {/*banner div*/
+  background-color: #55267E;/*Displays a purple background.*/
+  text-align: center;/*This makes the logo aligned to the centre of the website.*/
+}
+.mynavbar {/*mynavbar div*/
+  background-color: #00A22B;/*Displays a green background.*/
+  text-align: center;/*This makes the links on the navbar aligned to the centre of the website.*/
+}
+.mynavbar a {/*mynavbar links*/
+  background-color: #EEEEC6;/*Displays a light yellow background colour link.*/
+  color: #D41BCD;/*Pink text on a light yellow background is easy to read but the colours are not complimentary.*/
+  padding: 10px 20px 10px 20px;/*This is a good size for my links, so that the links are big enough for users to click on easily but not too big, so that the links clutter the page.*/
+  display: inline-block;/*This displays the links as inline-blocks, so that the links are big enough and well-organised on the website.*/
+}
+.mynavbar a:hover {/*mynavbar hover links */
+  background-color: #e8d100;/*Displays a brighter yellow background colour when the user hovers over a link.*/
+}
+
+.info {/*info div*/
+  margin-left: 100px;/*There should be a margin to the left, so the text is not aligned directly to the left edge of the page.*/
+  margin-right: 100px;/*There should be a margin to the right, so tha there is space between the text and the right edge of the page.*/
+  text-align: left;/*It is consistent for paragraph text should be aligned to the left and this also help users with dyslexia.*/
+}
+.images {/*images div*/
+  text-align: center;/*The images should be aligned to the centre to address the aesthetics and layout of my pages.*/
+}
+.resize {/*image resize class*/
+height: 100px;/*This is a suitable height for these images, so that they are big enough to be seen easily but not too big, so they clutter the page.*/
+width: auto;/*The width should be auto, so that the images are in the right aspect and that they are not squashed.*/
+}
+.resize2 {/*image resize 2 class*/
+height: 400px;/*This is a suitable height for these images, so that they are big enough to be seen easily but not too big, so they clutter the page.*/
+width: auto;/*The width should be auto, so that the images are in the right aspect and that they are not squashed.*/
+}
+.card {/*card div*/
+  background-color: #A651CF;/*Displays a violet coloured background.*/
+  padding: 20px 40px 20px 40px;/*This is a good size for the card links, so that the links are big enough for users to click on easily but not too big, so that the links clutter the page.*/
+}
+.card a {/*card links*/
+color: #020200;/*Black text on a violet background is easy enough to read but the colours are not complimentary to each other.*/
+}

@@ -1,0 +1,27 @@
+/*making the coners rounded on the card */
+.rounded.corners {
+  border-radius: 30px;
+}
+/* making background black */
+body{
+  background-color: black !important;
+}
+
+/* when you hover the button it changes color */
+.search-button:hover {
+  background-color: #ffa31a;
+}
+/* making the car stay in the center */
+.card {
+  display:inline-block;
+}
+/* image resize */
+.image-resize {
+  max-width: 100%;
+  height: auto;
+}
+/* styling the h1 so its in the center */
+h1{
+  text-align: center;
+  margin: 70px;
+}

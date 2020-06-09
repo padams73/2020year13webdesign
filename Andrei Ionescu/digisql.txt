@@ -1,0 +1,93 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:8889
+-- Generation Time: Jun 09, 2020 at 02:27 AM
+-- Server version: 5.7.26
+-- PHP Version: 7.4.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `pcwiki`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `category`
+--
+
+CREATE TABLE `category` (
+  `categoryID` int(2) NOT NULL COMMENT 'Category ID for a specific category (this is used to find specific categories by taking their ID from the database)',
+  `category` varchar(30) COLLATE utf8_unicode_ci NOT NULL COMMENT 'this is the category title',
+  `content` varchar(10000) COLLATE utf8_unicode_ci NOT NULL COMMENT 'this is the content for the category',
+  `upvote` int(2) NOT NULL COMMENT 'and this is the upvote row where it counts up the upvotes'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `category`
+--
+
+INSERT INTO `category` (`categoryID`, `category`, `content`, `upvote`) VALUES
+(10, 'AMD vs Nvidia Graphics', '<h1 style=\"text-align: center;\"><em>AMD Vs Nvidia Graphics</em></h1>\r\n<p><em>Thoughts?</em></p>\r\n<p>Made By Admin</p>\r\n<p>&nbsp;</p>', 0),
+(38, 'Driver Instalation', '<p>dummy text edd sf dummy textdummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummext dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text dummy text</p>\r\n<p>hi there</p>\r\n<p>sdfu gsdfyug uf asdf s</p>\r\n<p>&nbsp;sdf jsadg jahdf jasd</p>\r\n<p>sdfiasgd fljweg&nbsp;</p>', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `userid` int(3) NOT NULL,
+  `username` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `admin` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`userid`, `username`, `password`, `admin`) VALUES
+(9, 'admin', '$2y$10$F5Gu6/8hR2hO9yRp7i.ZzuwUzwHyju7kI6ARNxiDummqSk8i1ZHIK', 1),
+(10, 'user', '$2y$10$80ktXZ/VNTh14vZJuA4.Cu/psLuMjTWpFPtXILi.KbiXMxVgp/oOm', 0),
+(11, 'andrei', '$2y$10$fzLq2xIjaawPNzB4Rk/Uk.7/I1EDbmu/vwO5gFjasPSGgwiIGj5Kq', 0),
+(12, 'bruh', '$2y$10$14mELJ4OUN9oTY/bDTeMw.z.TmzMl9Kz0qEgau9nRc6DP9v8r/JxW', 0),
+(13, 'bruh', '$2y$10$ww3FCECE05txdjbU5hET8.ST5ZdLC8qnMvPD.f.TwdIl3CWuzhE9i', 0),
+(14, '<marquee>obuga</marquee>', '$2y$10$imP34LcsBsG/NsE1X.AG7eDQ.Hky.JJTSYRUXIas63kpMjcsMANrW', 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `category`
+--
+ALTER TABLE `category`
+  ADD PRIMARY KEY (`categoryID`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`userid`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `category`
+--
+ALTER TABLE `category`
+  MODIFY `categoryID` int(2) NOT NULL AUTO_INCREMENT COMMENT 'Category ID for a specific category (this is used to find specific categories by taking their ID from the database)', AUTO_INCREMENT=40;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `userid` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
