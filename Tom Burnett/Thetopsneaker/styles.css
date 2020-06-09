@@ -1,0 +1,107 @@
+.image-resize {
+  max-width: 100%;
+  height: auto;
+}
+.updates{
+  color: white;
+}
+.username{
+  text-align: center;
+}
+.password{
+  text-align: center;
+  padding-top: 4%
+}
+.login_button{
+  text-align: center;
+  padding-top: 3%
+}
+.login_details{
+  text-align: center;
+  padding: 4%
+}
+.g-recaptcha{
+  padding-left: 35%;
+  padding-top: 3%;
+}
+.nav-item{
+  text-align: right;
+}
+.covid{
+  text-align: center;
+  background-color: black;
+  padding: 1%
+}
+.updates:hover{
+    color: white;
+    text-decoration: none;
+}
+.for_you{
+  text-align: center;
+  color: white;
+  padding: 3%
+}
+.container_for_you{
+  background-color: #9C0000;
+}
+.login_details{
+  color: #9C0000;
+}
+.cart_icon{
+  float: right;
+}
+.login_button{
+  padding-bottom: 5%
+}
+.footer{
+  background-color: #9C0000;
+  padding: 2%
+}
+.brand{
+  background-color: black;
+}
+.spacer{
+  padding: 0.5%;
+}
+.product_item{
+  color: #9C0000;
+  text-decoration: none;
+}
+.product_item:hover{
+  color: #9C0000;
+  text-decoration: none;
+}
+.footer_text{
+  color: #EBE8E8;
+}
+.footer_text:hover{
+  color: #FFFFFF;
+}
+.product-card:hover{
+  text-decoration: none;
+}
+.card-text{
+  color: black;
+}
+.container-left{
+  float: left;
+}
+.container-right{
+  float: right;
+}
+.intro-button{
+  background-color: white;
+  text-decoration: none;
+}
+.remove{
+  text-decoration: none;
+  color: #9C0000;
+}
+.remove:hover{
+  text-decoration: underline;
+  color: #9C0000;
+}
+.image-resize-table{
+  max-width: 150px;
+  height: auto;
+}
