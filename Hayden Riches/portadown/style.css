@@ -1,0 +1,85 @@
+* {
+  font-family: arial, !important;
+}
+
+.main-colour {
+  background-color: #042D57
+}
+
+.container {
+  background-color: #EFEFEF
+}
+
+.navbar {
+  width: 100%
+}
+
+.nav-link {
+  color: white;
+  font-size: 20pt;
+}
+
+.logo {
+  height: 40px;
+}
+
+.help-link {
+  color: white;
+  font-size: 12pt;
+  margin-left: 20px;
+}
+
+.index_link {
+  color: black;
+}
+
+.index_link:hover {
+  color: black;
+}
+
+.stock_left {
+  background-color: white;
+  height: 500px;
+}
+
+.stock_right {
+  background-color: white;
+}
+
+.stock_link {
+  font-size: 18pt;
+}
+
+.year_link {
+  font-size: 25pt;
+  color: black;
+}
+
+table {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.weights_right {
+  height: 500px;
+}
+
+.table {
+  overflow-x: scroll
+}
+
+body {
+  background-color: #EFEFEF;
+}
+
+@media screen and (max-width: 1000px) {
+
+.login_image {
+  display: none;
+}
+
+.weights_image {
+  display: none;
+}
+
+}
