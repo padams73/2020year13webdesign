@@ -1,0 +1,321 @@
+// SCSS stylesheet
+// Most (not all) of the mixins deal with dark mode/light mode colour scheme changes or fonts.
+// Dark mode/light mode is decided by the device, if you switch your theme on your viewing device changes will be seen on the webpage instantly.
+// This feature is supported with essentially all browsers on Windows, MacOS, iOS and Android.
+
+@mixin nav-border {
+	// Sets the colour scheme of the navbar
+	@media (prefers-color-scheme: dark) {
+		border-bottom: 10px solid #e0e0e0;
+	}
+
+	@media (prefers-color-scheme: light) {
+		border-bottom: 10px solid black;
+	}
+}
+@mixin text-color($opacity) {
+	// Sets the colour of the text
+	@media (prefers-color-scheme: dark) {
+		color: white !important;
+		opacity: $opacity !important;
+	}
+
+	@media (prefers-color-scheme: light) {
+		color: black !important;
+	}
+}
+@mixin bg-color($dark, $light) {
+	// Sets the background colour of the page
+	@media (prefers-color-scheme: dark) {
+		background-color: $dark !important;
+	}
+
+	@media (prefers-color-scheme: light) {
+		background-color: $light !important;
+	}
+}
+@mixin text-shadow {
+	// Sets the colour of text shadows to be used (matches text colour)
+	opacity: 1 !important;
+
+	@media (prefers-color-scheme: dark) {
+		text-shadow: 0px 0px 4px white;
+	}
+
+	@media (prefers-color-scheme: light) {
+		text-shadow: 0px 0px 4px black;
+	}
+}
+@mixin nav-font {
+	// Sets the font styling for the elements in the navbar
+	font-family: neusa-next-std-condensed, sans-serif !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
+	text-decoration: none !important;
+	vertical-align: bottom;
+	@media screen and (min-width: 1440px) {
+		margin-bottom: -20px !important;
+	}
+	@media screen and (min-width: 720px) {
+		margin-bottom: -10px !important;
+	}
+	@media screen and (min-width: 480px) {
+		margin-bottom: -6px !important;
+	}
+}
+@mixin neusa-condensed($weight, $style) {
+	// Sets the font weight for neusa-condensed. 400 = regular, 700 = bold
+	font-family: neusa-next-std-condensed, sans-serif !important;
+	font-weight: $weight !important;
+	font-style: $style !important;
+}
+@mixin johnny-sans($weight, $style) {
+	font-family: roboto, sans-serif;
+	font-weight: $weight;
+	font-style: $style;
+}
+body {
+	// Sets the body background colour
+	@include bg-color(#060606, #f8f8f8);
+}
+p {
+	// Sets the font styling for <p>
+	@include text-color(0.87);
+	@include johnny-sans(400, normal);
+	word-break: break-word;
+}
+.navbar {
+	// Sets stylings for the navbar
+	@include bg-color(#253080, #33adff);
+	@include nav-border;
+	margin: 0 !important;
+	padding: 0px !important;
+
+	a {
+		text-decoration: none !important;
+	}
+	h1 {
+		@include text-color(0.87);
+		@include nav-font;
+		padding-left: 20px;
+		font-size: 87px;
+		@media only screen and (max-width: 1440px) {
+			font-size: 6vw !important;
+		}
+	}
+	h1:hover {
+		@include text-color(0.87);
+		@include text-shadow;
+	}
+	h2 {
+		@include text-color(0.87);
+		@include nav-font;
+		padding-left: 20px;
+		font-size: 56px;
+		@media only screen and (max-width: 1440px) {
+			font-size: 4vw !important;
+		}
+	}
+	h2:hover {
+		@include text-color(0.87);
+		@include text-shadow;
+	}
+	h3 {
+		@include text-color(0.87);
+		@include nav-font;
+		font-size: 2vmax !important;
+	}
+	h3:hover {
+		@include text-color(0.87);
+		@include text-shadow;
+	}
+	.dropdown-menu {
+		@include text-color(1);
+		@include bg-color(#253080, #33adff);
+		@include neusa-condensed(700, normal);
+		text-transform: uppercase;
+	}
+	.dropdown-item:hover {
+		@include bg-color(#121843, #98d6ff);
+	}
+	.search {
+		@include nav-font;
+	}
+}
+.text-bg-color {
+	// Sets the colour of the background behind text surfaces
+	@include bg-color(#121212, #ffffff);
+}
+.search-bar {
+	// Sets stylings for the search bar
+	@include nav-font;
+	color: black;
+	font-size: 2vmax;
+	opacity: 1 !important;
+	display: inline-block;
+	background-color: #ffffff;
+	border-radius: 25px;
+	border: none;
+	padding: 10px;
+}
+.search-bar:hover {
+	// Sets hover effects for the search bar
+	text-shadow: 0 0 4px grey;
+}
+.search-bar::placeholder {
+	// Sets stylings for the search bar placeholder text
+	color: black;
+	opacity: 0.87;
+}
+.small-pfp {
+	// Sets stylings for a small profile picture
+	display: inline-block;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-top: 7px;
+	@media only screen and (min-width: 600px) {
+		height: 30px;
+		width: 30px;
+	}
+	@media only screen and (max-width: 600px) {
+		height: 20px;
+		width: 20px;
+	}
+	// hides if screen width is too small to show comfortably
+	@media only screen and (max-width: 400px) {
+		height: 0px;
+		width: 0px;
+	}
+}
+.article {
+	// Sets stylings unique to articles
+	@include text-color(0.87);
+	h1 {
+		@include neusa-condensed(700, regular); // 700 = bold
+		font-size: 4vmax !important;
+		line-height: 90% !important;
+		text-transform: uppercase !important;
+		padding-top: 15px;
+	}
+	h3 {
+		@include neusa-condensed(700, regular);
+		font-size: 2vmax !important;
+	}
+	h4 {
+		@include neusa-condensed(100, regular); // 400 = regular
+		padding-top: 10px;
+		text-transform: capitalize;
+		@media only screen and (min-width: 600px) {
+			font-size: 20px;
+		}
+		@media only screen and (max-width: 600px) {
+			font-size: 15px;
+		}
+	}
+	h6 {
+		@include neusa-condensed(400, regular);
+		padding-right: 10px;
+		float: right;
+		@media only screen and (min-width: 600px) {
+			font-size: 15px;
+		}
+		@media only screen and (max-width: 600px) {
+			font-size: 10px;
+		}
+	}
+}
+.forum {
+	// Sets stylings unique to forums
+	@include text-color(0.87);
+	h1 {
+		@include neusa-condensed(700, regular); // 700 = bold
+		font-size: 4vmax !important;
+		line-height: 90% !important;
+		text-transform: uppercase !important;
+		padding-top: 15px;
+	}
+	h3 {
+		@include neusa-condensed(700, regular);
+		font-size: 2vmax !important;
+	}
+	h4 {
+		@include neusa-condensed(100, regular); // 400 = regular
+		padding-top: 10px;
+		text-transform: capitalize;
+		@media only screen and (min-width: 600px) {
+			font-size: 20px;
+		}
+		@media only screen and (max-width: 600px) {
+			font-size: 15px;
+		}
+	}
+	h6 {
+		@include neusa-condensed(400, regular);
+		padding-right: 10px;
+		float: right;
+		@media only screen and (min-width: 600px) {
+			font-size: 15px;
+		}
+		@media only screen and (max-width: 600px) {
+			font-size: 10px;
+		}
+	}
+}
+.home {
+	// Sets stylings unique to the homepage
+	@include text-color(0.87);
+	h1 {
+		@include neusa-condensed(700, regular); // 700 = bold
+		font-size: 4vmax !important;
+		line-height: 90% !important;
+		text-transform: uppercase !important;
+		padding-top: 15px;
+	}
+	h3 {
+		@include neusa-condensed(700, regular);
+		font-size: 2vmax !important;
+	}
+	h4 {
+		@include neusa-condensed(100, regular); // 400 = regular
+		padding-top: 10px;
+		text-transform: capitalize;
+		@media only screen and (min-width: 600px) {
+			font-size: 20px;
+		}
+		@media only screen and (max-width: 600px) {
+			font-size: 15px;
+		}
+	}
+	h6 {
+		@include neusa-condensed(400, regular);
+		padding-right: 10px;
+		float: right;
+		@media only screen and (min-width: 600px) {
+			font-size: 15px;
+		}
+		@media only screen and (max-width: 600px) {
+			font-size: 10px;
+		}
+	}
+}
+.border-bottom {
+	// Sets a border that can be used on the bottom of elements
+	@include text-color(0.87);
+	border-bottom: 2px solid;
+}
+.hover-text-shadow:hover {
+	@include text-shadow;
+}
+.custom-card {
+	@include bg-color(#181818, #f8f8f8);
+	border-radius: 10px;
+	margin-top: 15px;
+}
+.btn {
+	@include bg-color(#242424, #dbdbdb);
+	@include text-color(0.87);
+	margin: 5px;
+}
+.btn:hover {
+	@include bg-color(#333333, #bbbbbb);
+}
