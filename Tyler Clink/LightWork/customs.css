@@ -1,0 +1,230 @@
+/*this page is for all of my styles*/
+
+body {
+  background-color: #000000;
+}
+
+/*middle box for home page*/
+.middle-box {
+  background-color: #000000;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 460px;
+}
+
+/*Home lightbulb image*/
+.home-img {
+    width: 50%;
+    height: auto;
+}
+
+/*Lightbulb image for back button (top left corner)*/
+.back-img {
+  max-width: 100%;
+  height: auto;
+  padding-left: 50px;
+  padding-top: 25px;
+}
+
+/*Model picture on About Us Page*/
+.model {
+  max-width: 120%;
+  height: auto;
+  padding-top: 120px;
+}
+
+/*Light Work name on Clothing Page*/
+.clothing-title {
+  padding-left: 190px;
+}
+
+/*Tables on table page*/
+.tables {
+  color: #FFFFFF;
+}
+
+/*Header for each page*/
+.title {
+  color: #FFFFFF;
+  text-decoration: underline;
+  font-size: 60px;
+  padding-top: 30px;
+  padding-left: 85px;
+  text-align: left;
+}
+
+/*Info for the Contact Page*/
+.info_contact {
+  color: #FFFFFF;
+  font-size: 34px;
+  padding-top: 45px;
+  padding-left: 85px;
+  text-align: left;
+}
+
+/*Info for the About Us Page*/
+.info_aboutus {
+  color: #FFFFFF;
+  font-size: 30px;
+  padding-top: 25px;
+  padding-left: 85px;
+  text-align: left;
+}
+
+/*Info for the Size Page*/
+.info_sizes {
+  color: #FFFFFF;
+  font-size: 25px;
+  padding-top: 15px;
+  padding-left: 85px;
+  text-align: left;
+}
+
+/*Info for the Clothing Page*/
+.info_clothing {
+  color: #FFFFFF;
+  font-size: 30px;
+  padding-top: 25px;
+  padding-left: 10px;
+}
+
+/*Info for the Admin Function Pages*/
+.info_admin {
+  color: #FFFFFF;
+  font-size: 34px;
+  padding-top: 15px;
+  padding-left: 85px;
+  text-align: left;
+}
+
+/*The Question on the FAQ Page*/
+.question {
+  color: #FFFFFF;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-left: 85px;
+  text-align: left;
+}
+
+/*The Answer on the FAQ Page*/
+.answer {
+  color: #FFFFFF;
+  font-size: 20px;
+  padding-left: 85px;
+  text-align: left;
+  margin-right: 80px;
+}
+
+/*Info on the availabilty on the Clothing Page*/
+.clothing-availability {
+  color: #FFFFFF;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*All labels on forms used*/
+label {
+  color: #FFFFFF;
+}
+
+/*The table on the Size Page*/
+.mytable {
+  color: white;
+}
+
+/*Also the table on the Size Page*/
+td {
+  padding-left: 85px;
+  font-size: 12px;
+}
+
+/*Resises the image on the Clothing Page*/
+.image-resize {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Dropdown Menu for the Sizes on the Clothing Page*/
+.dropdown-menu {
+  color: white;
+  font-size: 5px;
+}
+
+/*Dropdown Items for the Sizes on the Clothing Page*/
+.dropdown-item {
+  color: black;
+  font-size: 15px;
+}
+
+/*Boxes for the colours that items come in on the Clothing Page*/
+.colour-box {
+  height: 50px;
+  width: 50px;
+  border: solid 1px white;
+}
+
+/*Button*/
+.btn-group {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+/*Admin Forms*/
+.admin-form {
+  padding-left: 85px;
+  padding-top: 35px;
+}
+
+/*Checkboxes on the admin add page*/
+.checkbox {
+  padding-left: 110px;
+  display: inline-block;
+}
+
+/*The submit button on the admin function pages*/
+.admin_button {
+  padding-left: 85px;
+  padding-top: 20px;
+}
+
+/*Links to the functions on the admin page*/
+.admin-link {
+  color: #FFFFFF;
+  font-size: 30px;
+  padding-left: 85px;
+  margin-right: auto;
+}
+
+/*The links on the selection page*/
+.select-link {
+  color: #FFFFFF;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*The links on delete confirm*/
+.confirm-link {
+  color: #FFFFFF;
+  font-size: 30px;
+  padding-left: 85px;
+}
+
+/*The info on the radio buttons*/
+.select-info {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+/*The links on the home page*/
+.home-link {
+  color: #FFFFFF;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+/*The alert on the login page if the user got username and password wrong*/
+.alert {
+  margin-left: 85px;
+  margin-top: 20px;
+}

@@ -1,0 +1,98 @@
+body{
+background-color: #9E0F0F;
+width: 100%;
+font-family: 'Roboto', sans-serif;
+}
+h1{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 225%;
+}
+
+h2{
+padding: 20px;
+font-family: 'Roboto', sans-serif;
+font-size: 150%;
+}
+
+h3{
+  font-family: 'Quicksand', sans-serif;
+}
+/* --------- formatting navbar ---------------- */
+.custom-nav {
+  background-color: #000000;
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.custom-nav .nav-link {
+  color: #FF0000;
+  margin-right: 30px;
+}
+
+.footertext {
+  font-family: Calibri;
+  font-size: 1rem;
+}
+.myform {
+  width: 300px;
+}
+.card-title {
+  font-family: Baskerville, Georgia, serif;
+}
+@media only screen and (max-width: 768px) {
+	.display-4 {
+		font-size: 2rem;
+	}
+  .myform {
+    width: 100%;
+  }
+}
+.main {
+background-color: #ffffff;
+/* float: center; */
+margin: 0 auto;
+width: 76%;
+
+}
+.mainaccount {
+background-color: #ffffff;
+/* float: center; */
+margin: 0 auto;
+width: 76%;
+height: 600px;
+}
+.left {
+background-color: #9E0F0F;
+width: 12%;
+float: left;
+height: 1456px;
+}
+.right {
+background-color: #9E0F0F;
+
+width: 12%;
+float: right;
+height: 1456px;
+}
+
+.boxed {
+  border: 6px solid #000000 ;
+  background-color: #FF0000;
+  text-align: center;
+  padding-top: 3px;
+  padding-left: 8px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+.boxed2{
+  border: 6px solid #000000 ;
+  background-color: #000000;
+  text-align: center;
+  padding-top: 3px;
+  padding-left: 8px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+
+}

@@ -1,0 +1,5 @@
+short list of established users current users:
+username:			password:
+
+admin				password
+user1				user1

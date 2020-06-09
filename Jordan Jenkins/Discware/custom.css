@@ -1,0 +1,262 @@
+/*Disc Condition*/
+.disc_condition_1 {color: #ff0000;}
+
+.disc_condition_2 {color: #FF9E00;}
+
+.disc_condition_3 {color: #29B350;}
+
+.navbar,  .footer, .drop_button {
+	background-color: #BB4A4A;
+	width: 100%;
+}
+
+.contact, .legal_info {
+	margin: 5%;
+}
+
+.legal {
+	text-align: center;
+}
+
+.legal h1{
+	float: top;
+	display: inline-block;
+	font-family: prohibition, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+}
+
+.search {
+	margin-right: 2%;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: block;
+	float: right;
+	width: auto;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}
+
+.card_image {
+	width: 200px;
+	display: block;
+	margin: 5% auto 0 auto;
+}
+
+.list_card p {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5%;
+	width: 75%;
+}
+
+.list_card {
+	margin: 2%;
+	height: 300px;
+	text-align: center;
+	width: 350px;
+	display: block;
+	float: left;
+	background-color: #535353;
+}
+
+/*Drop Down Menu*/
+.burger_menu {margin-bottom: 25%;}
+
+.drop_button {
+	padding: 10px;
+    border: none;
+}
+
+.dropdown_nav {
+    float: left;
+    display: inline-block;
+	margin-top: 2%;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 98%;
+	z-index: 1;
+	height: 200px;
+}
+
+.dropdown_subsection h3 {margin-left: 1%;}
+
+.dropdown_register {float: right;}
+
+.dropdown_subsection {display: inline-block;}
+
+.dropdown a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover {
+	background-color: #000
+}
+
+.dropdown_nav:hover .dropdown {display: block;}
+
+.dropdown_nav:hover {background-color: #C3C3C3;}
+
+/*Fonts*/
+h1 {
+	font-size: 100px;
+	float: left, top;
+	margin-left: 2%;
+	display: inline-block;
+	font-family: prohibition, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h2, p, h3 {
+	font-family: rigid-square, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.img-fluid {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	max-width: 500px;
+}
+
+.home_content {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+}
+
+.prohibition:hover {text-decoration: none;}
+
+.nav-bg {background-color: #BB4A4A;}
+
+a {color: #000;}
+
+a, a:hover {transition: 0.5s;}
+
+a:hover {color: #fff;}
+
+.home_box {
+	height: 50%;
+	margin-top: 150px;
+	margin-bottom: 150px;
+	padding: 12px;
+	display: inline-block;
+	width: 400px;
+	float: center;
+	text-decoration: underline;
+	background-color: #91AB6A;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.container-fluid {
+	margin-top: 2%;
+	margin-bottom: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.box_content {
+	background-color: #fff;
+	border-radius: 10px;
+	height: auto;
+}
+
+.tab {	
+	width: 1000px;
+	overflow: hidden;
+	border: 1px solid #000;
+}
+
+.tablinks {width: 50%;}
+
+.tab button {
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+
+/*Change background color of buttons when hovering*/
+.tab button:hover {
+	background-color: #ddd;
+}
+
+/*Create an active/current tablink class*/
+.tab button.active {
+ 	background-color: #ccc;
+}
+
+/*Style the tab content*/
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+.list_specific h1 {
+	margin-left: 0;
+	float: top;
+	display: inline-block;
+	font-family: prohibition, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 70px;
+}
+
+.item_details {
+	padding: 2%;
+	float: top, left;
+	display: inline-block;
+	border: 1px solid #000;
+	height: 500px;
+	max-width: 1000px;
+}
+
+.list_image, .item_image {
+	margin-right: 5%;
+	float: left;
+	display: inline-block;
+	max-width: 500px;
+	max-height: 500px
+}
+
+.item_details a:hover, .item_remove a:hover {background-color: #7F0000;}
+
+.remove {
+	width: 100%;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+	.home_box {
+		width: 100%;
+		float: left;
+		display: block;
+	}
+}

@@ -1,0 +1,321 @@
+/* BootStrap queries */
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+/*Here I am setting the body tag to the lightgrey background colour by default*/
+html, body{
+  background-color: #ECECEC;
+  height:100%;
+  min-height: 100%;
+  position: relative;
+}
+
+.container-fluid{
+  background-color: white;
+}
+
+/*This is me trying to get the sticky footer to work but it never did*/
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  flex: 1 0 auto;
+}
+
+.footer{
+  flex-shrink: 0;
+  clear: both;
+}
+
+/*Here I have created a class for my anchor links called nostyle because I dont want the default anchor styling*/
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+/*Styling for header begins*/
+.logo{
+  float: left;
+  opacity: 0.77;
+}
+
+.logo:hover{
+  opacity: 0.5;
+}
+.navlink{
+  text-align: left;
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.navlink:hover{
+  opacity: 0.5;
+  text-decoration: none;
+  color: grey;
+}
+.account:hover{
+  opacity: 0.5;
+}
+
+.img-fluid:hover{
+  opacity: 0.5;
+}
+
+.LOGIN:hover{
+  opacity: 0.5;
+}
+
+.searchbox{
+  width: 50%;
+}
+
+/* Styling for cards*/
+.card-header h5{
+  margin-left:4%;
+  color:white;
+  float:left;
+}
+
+.card-header h7{
+color:white;
+float: left;
+}
+
+.card-header img{
+  float:left;
+  width:10%;
+  padding-left:1%;
+}
+
+.card-header-num {
+  margin-right:11%;
+}
+
+.card-header-latest {
+  margin-right: 3.5%;
+}
+
+.upvote:hover{
+  opacity: 0.7;
+}
+
+/*Styling for the trending images on the home page*/
+.trendingLink:hover{
+  opacity: 0.7;
+}
+.gallery-1{
+  border: solid;
+}
+
+.gallery-2{
+  border:solid;
+}
+
+.gallery-1:hover {
+  opacity: 0.7;
+}
+
+.gallery-2:hover{
+  opacity: 0.7;
+}
+
+.gallery-1 img {
+  width: 100%;
+  height: 400;
+  width: 600;
+}
+.gallery-2 img {
+  width: 100%;
+  height: 400;
+  width: 600;
+}
+
+.desc {
+  font-weight: bold;
+}
+
+.responsive-1 {
+  padding: 0 6px;
+  float: left;
+  width: 18.9999%;
+}
+.responsive-2 {
+  padding: 0 6px;
+  float: left;
+  width: 20.9999%;
+}
+
+@media only screen and (max-width: 800px) {
+  .responsive-1 {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  .responsive-2 {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .responsive-1 {
+    width: 100%;
+  }
+  .responsive-2 {
+    width: 100%;
+  }
+
+}
+
+/*styling for sign up error messages*/
+.signuperror{
+  font-size: 200%;
+}
+
+
+.noPost{
+  padding-left: 2.5%;
+}
+
+/*Styling for the comment section*/
+.comment_section{
+  overflow: auto;
+  font-family: carlito;
+}
+
+.comment_header{
+  margin-top: 30px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 10px;
+  font-family: carlito;
+}
+
+.text_field{
+  background-color: white;
+  float: left;
+  height: 50px;
+  width: 1000px;
+  border: lightgrey;
+}
+
+.text_field textarea{
+  height: 50px;
+  width: 1000px;
+  resize: none;
+}
+
+.text_field button{
+  width: 100px;
+  height: 30px;
+}
+
+.enter_comment{
+  padding-top: 10px;
+  margin-bottom: 100px;
+}
+.comment-error {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.comments{
+  margin-left: 8%;
+  margin-bottom: 15px;
+  font-family: calibri;
+  float: left;
+  position: relative;
+}
+
+.comments img{
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-right: 15px;
+  border: solid;
+  border-color: lightgrey;
+}
+
+.enter_comment img{
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-right: 15px;
+  border: solid;
+  border-color: lightgrey;
+}
+.comment_field{
+  background-color: white;
+  float: left;
+  height: 50px;
+  width: 935px;
+  border: lightgrey;
+  position: relative;
+}
+
+.comment_field p{
+  padding-left: 10px;
+  margin-bottom: 1px;
+}
+
+.author {
+  padding-top: 2px;
+  font-size: 10px;
+}
+
+/*Styling for edit form */
+.edit_form{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.edit_form button{
+  width: 40px;
+  height: 20px;
+  color: #282828;
+  background-color: #fff;
+  border: none;
+  opacity: 0.7;
+}
+.edit_form button:hover{
+  opacity: 1;
+}
+
+/*Styling for the delete form */
+.delete_form{
+  position: absolute;
+  top: 0px;
+  right: 40px;
+}
+
+.delete_form button{
+  width: 50px;
+  height: 20px;
+  color: #282828;
+  background-color: #fff;
+  border: none;
+  opacity: 0.7;
+}
+.delete_form button:hover{
+  opacity: 1;
+}

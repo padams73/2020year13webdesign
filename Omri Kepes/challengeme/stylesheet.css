@@ -1,0 +1,368 @@
+/* reset settings for screen*/
+*{
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  font-family: montserrat;
+  }
+  /* navbar color styling */
+  .navbar-dark {
+    background-color: #2C2C2C;
+  }
+/* When highlighting text, highlight is red themed colour */
+::selection {
+  background: #FF0000;
+  color: white;
+}
+::-moz-selection {
+  background: #FF0000;
+  color: white;
+}
+
+/* theme (light black) color is set */
+.bg-themedark {
+  background-color: #2C2C2C;
+}
+/* setting margin values for terms */
+.bg-danger {
+  background-color: #FF0000;
+}
+.mt-6 {
+  margin-top: 100px;
+}
+.mb-6 {
+  margin-bottom: 100px;
+}
+.mr-6 {
+  margin-right: 100px;
+}
+.mt-lg-6 {
+  margin-top: 100px;
+}
+.mt-md-6 {
+  margin-top: 100px;
+}
+.mt-sm-6 {
+  margin-top: 100px;
+}
+.voteButton{
+  border-radius: 50%;
+}
+.bg-dark {
+  background-color: #000000;
+}
+.btn-outline-dark{
+  background-color: #000000;
+  color: #000000;
+  border-color: #000000;
+}
+/* top row colloum bg colour and margins */
+.toprow {
+  background-color: black;
+  margin-bottom: 7px;
+}
+/* points algin to the center */
+.leaderboardTable {
+  text-align: center;
+  background-color: #DFDFDF;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+/* leaderboard homepage section margins and colour */
+.leaderboard {
+  background-color: #DFDFDF;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+/* up and coming section margins and colour */
+.upAndComing {
+  background-color: #DFDFDF;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+/* up and coming second row text css */
+.secondrowtext {
+  text-align: left;
+  margin-top: 1%;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+/* VS styleing in the middle of each username */
+.VStext {
+  color: #FF0000;
+  font-size: 25px;
+  text-decoration: none;
+}
+/* Upandcoming title position and color etc for upandcoming page */
+.upAndComingTitlePage h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: #FF0000;
+  font-size:30px;
+}
+/* large */
+@media only screen and (max-width: 1900px){
+  /* Big title for leaderboard */
+  .leaderboardTitle {
+  color: red;
+  text-align: left;
+  text-transform: uppercase;
+  color: #FF0000;
+  font-size:30px;
+  font-weight: bold;
+  }
+/* welcome section for admin and user */
+  .welcomeSection h4 {
+    text-align: center;
+    color: red;
+    font-size: 25px;
+  }
+
+  .leaderboard .username a {
+  color: black;
+  }
+  /* leaderboard top row text css */
+  .toprowtext {
+    margin-top: 3%;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  /* Upandcoming title position and color etc for home page */
+  .upAndComingTitle h2{
+    text-align: left;
+    text-transform: uppercase;
+    color: #FF0000;
+    font-size:30px;
+  }
+  /* Upandcoming title position and color etc for home page */
+  .upAndComingTitle h3{
+    text-transform: uppercase;
+    color: #FF0000;
+    font-size:30px;
+  }
+  /* Upandcoming title position and color etc for UpAndComing page*/
+  .upAndComingTitlePage h2{
+    text-transform: uppercase;
+    color: #FF0000;
+    font-size:35px;
+  }
+}
+/* medium */
+@media only screen and (max-width: 992px){
+  .leaderboardTitle {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FF0000;
+    font-size:30px;
+    font-weight: bold;
+  }
+  /* leaderboard homepage section margins and colour */
+  .leaderboardTable {
+    background-color: #DFDFDF;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .welcomeSection h4{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+  }
+  /* placement css text aglin  */
+
+
+  .leaderboard .username a {
+  color: black;
+  }
+  /* home page leaderborad second row text (same as top row for up and coming)*/
+  .toprowtext {
+    margin-top: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  /* Upandcoming title position and color etc for home page */
+  .upAndComingTitle h2{
+    text-align: left;
+    text-transform: uppercase;
+    color: #FF0000;
+    font-size:30px;
+  }
+  /* Upandcoming title position and color etc for home page */
+  .upAndComingTitle h3{
+    text-transform: uppercase;
+    color: #FF0000;
+    font-size:30px;
+  }
+  /* Upandcoming title position and color etc for UpAndComing page*/
+  .upAndComingTitlePage h2{
+    text-transform: uppercase;
+    color: #FF0000;
+    font-size:25px;
+    font-weight: bold;
+  }
+  /* 'my account' user events page styling for up and coming events */
+  .userEventsUp{
+    font-size: 15px;
+  }
+  /* 'my account' user events page styling for pending events */
+  .userEventsPending{
+    font-size: 10px;
+  }
+}
+/* small */
+@media only screen and (max-width: 768px){
+  .leaderboardTitle {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FF0000;
+    font-size:30px;
+    font-weight: bold;
+  }
+  /* leaderboard homepage section margins and colour */
+  .leaderboardTable {
+    background-color: #DFDFDF;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .welcomeSection h4{
+    text-align: center;
+    color: red;
+    font-size: 30px;
+  }
+  .leaderboard .username a {
+  color: black;
+  }
+  /* home page leaderborad second row text (same as top row for up and coming)*/
+  .toprowtext {
+    margin-top: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  /* Upandcoming title position and color etc for home page */
+  .upAndComingTitle h2{
+    text-transform: uppercase;
+    color: #FF0000;
+    font-size:20px;
+    font-weight: bold;
+  }
+  /* Upandcoming title position and color etc for home page*/
+  .upAndComingTitle h3{
+    text-transform: uppercase;
+    color: #FF0000;
+    font-size:20px;
+    font-weight: bold;
+  }
+  /* Upandcoming title position and color etc for UpAndComing page*/
+  .upAndComingTitlePage h2{
+    text-transform: uppercase;
+    color: #FF0000;
+    font-size:25px;
+    font-weight: bold;
+  }
+  .totalFightsLeaderborad{
+    font-size: 10px;
+  }
+  /* 'my account' user events page styling for up and comign events */
+  .userEventsUp{
+    font-size: 10px;
+  }
+}
+/* all links to a userdash are themed colour */
+#userNameLink {
+  color: #121212;
+}
+/* styling all headers to be the correct color  */
+h3 {
+color: #FF0000;
+}
+/* positioning in center for logo on the login page */
+.logologin img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* please login text center */
+.logologin h3 {
+  text-align: center;
+  font-family: montserrat;
+  text-transform:uppercase;
+  color: black;
+  margin-top: 20px;
+}
+/* login form styling */
+.loginform {
+  margin: 0 auto;
+  border: 1px solid black;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #DEDEDE;
+}
+/* register link on login page */
+.register a {
+  text-align: right;
+  color: black;
+}
+/* styling for register page */
+.logoregister h3 {
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+  font-size: 30px;
+}
+/* positioning in center for logo on the register page */
+.logoregister img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+/* register form styling */
+.registerform {
+  margin: 0 auto;
+  border: 1px solid black;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: left;
+  background-color: white;
+}
+/* Select user dash border styling*/
+.selectUserBorder{
+  margin: 0 auto;
+  border: 1px solid black;
+  color: black;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+/* userdash info bout each users text area */
+.selectUserText {
+  margin-left: 30px;
+  font-size: 15px;
+  margin-right: 30px;
+}
+/* the dash the appears on the select user page */
+#userDash {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px solid black;
+}
+/* styloing the text for the myaccount page */
+#myAccountusername{
+  margin-top: 5%;
+  margin-right: 110px;
+}
+/* styloing the text for the myaccount page */
+#myAccountName {
+  margin-right: 110px;
+}
+.selectEventBorder{
+  margin: 0 auto;
+  border: 1px solid black;
+  text-align: center;
+}
