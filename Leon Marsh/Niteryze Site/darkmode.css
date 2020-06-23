@@ -1,0 +1,345 @@
+
+/* This tag is used to se the image of the home page*/
+.mainpage {
+  background: url("images/niteryse.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+/* This tag is used to set the image background for the rest of the site bar the home page */
+.body1 {
+  background: url("images/webpage1.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* all of the css for the footer at the botom of each page */
+.footer {
+  clear: both;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  background-color: #1a1a1d;
+  color: white;
+}
+/* imports the Nexa bold font */
+@font-face {
+  font-family: Nexa-Bold;
+  src: url(fonts/Nexa-Bold.ttf);
+  font-weight: bold;
+}
+/* imports normal nexa font*/
+@font-face {
+  font-family: Nexa;
+  src: url(fonts/Nexa-Light.ttf);
+}
+/* formatting h1 tag*/
+h1 {
+  font-family: Nexa;
+  font-size: 28px;
+}
+/* the next five tags are for the formatting of the nav bar along the left had side of the page*/
+.vert-menu {
+  width: 250px; /* Set a width if you like */
+  float: left;
+}
+.vert-menu a {
+  font-family: Nexa;
+  font-size: 35px;
+  color: white; /* white text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+.vert-menu a.active {
+  font-family: Nexa-Bold;
+  font-size: 40px;
+}
+.vert-menu a:hover {
+  background-color: #c3073f; /* Dark red background on mouse-over */
+}
+.vert-menu a.homeicon:hover {
+  background-color: transparent;
+}
+/* all formatting for the social icons located within the footer */
+.social-icons {
+  text-align: center;
+  margin-left: 40px;
+  }
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li img {
+  width:50px;
+  height:50px;
+  margin-left: 10px;
+  margin-left: 10px;
+
+}
+/* formatting fot the main content of all pages */
+.content1 {
+  display: block;
+  float: right;
+  width: 1000px;
+  height: auto;
+  padding-top: 50px;
+  margin-right: 400px;
+  text-decoration: none;
+
+}
+
+/* formatting of the h2 tag*/
+h2 {
+  font-family: Nexa-Bold;
+  font-size: 50px;
+  color: #c3073f;
+}
+/* formatting of the login bar*/
+.login {
+  font-family: Nexa-Bold;
+  width: 30%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+}
+/*formatting for all of the sites buttons unless specified*/
+.button {
+  font-size: 20px;
+  background-color: white;
+  color: #c3073f;
+  width: 200px;
+  height: 50px;
+}
+/* formatting of the logout button/link*/
+.logout a{
+  bottom: 0;
+  left: 0;
+  clear: both;
+  background-color: #c3073f;
+  height: 55px;
+  width: 400px;
+  margin-top: 20px;
+  float: right;
+  margin-right: 700px;
+  font-family: Nexa-Bold;
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  color: white; /* white text color */
+  text-decoration: none; /* Remove underline from links */
+}
+.logout a:hover {
+  background-color: #1b2126; /* Dark red background on mouse-over */
+  color: white;
+}
+/* Slideshow container */
+.slideshow-container {
+  clear: both;
+  width: 70%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  float: right;
+  margin-left: 550px;
+  background: #f1f1f1f1;
+}
+/* Slide formatting*/
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+* {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 22px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all other buttons */
+button {
+  background-color: #c3073f;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+/* formatting for the review popup*/
+.addReview {
+    background-color: #c3073f;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 250px;
+    margin-left: 1090px;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #c3073f;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  margin-left: 275px;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  opacity: 90%;
+  background-color: grey;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #c3073f;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+/* formatting for the displayed reviews on the admin delete page */
+.adminReview {
+  width: 250px; /* Set a width if you like */
+  height: 55px;
+  float: left;
+  margin-left: 200px;
+  font-family: Nexa;
+  color: black; /* white text color */
+  display: block; /* Make the links appear below each other */
+  font-size: 15px;
+  padding: 15px; /* Add some padding */
+  padding-bottom: 5px;
+  text-decoration: none; /* Remove underline from links */
+}
+.adminReview a{
+  text-decoration: none;
+  color: black;
+}
+.title {
+  margin-left: 450px;
+}
+
+.adminReview a:hover {
+  color: #c3073f; /* Dark red background on mouse-over */
+}
+.searcherror {
+  color: #c3073f;
+}
+/* formatting for photos on the site */
+.photos {
+  margin-top: 75px;
+  margin-left: 450px;
+}
+.photo2 {
+  margin-top: 75px;
+  margin-left: 75px;
+}

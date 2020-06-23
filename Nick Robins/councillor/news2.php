@@ -1,7 +1,7 @@
 <a name="news"></a>
 <!-- This is the Page Displaying the News -->
 
-<? include('dbconnect.php') ?> <!-- Including DB Connect (connecting to Database) -->
+<?php include('dbconnect.php') ?> <!-- Including DB Connect (connecting to Database) -->
 
 <div class="container-fluid">
 
